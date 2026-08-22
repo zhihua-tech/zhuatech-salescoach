@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="知华科技智能销售话术系统，基于客户场景生成可审阅的话术建议与异议处理训练。预留 DeepSeek 兼容接口。">
+  <meta name="keywords" content="智能销售话术,销售教练,异议处理,销售培训,合规话术,DeepSeek Java,知华科技">
+  <title>ZhuaTech Sales Coach｜知华科技智能销售话术系统</title><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css">
+</head>
+<body style="--accent:#a66a16;--accent-2:#c98a31">
+  <aside class="sidebar">
+    <a class="brand" href="https://www.zhuatech.cn/" target="_blank"><span class="brand-mark">ZH</span><span><b>知华科技</b><small>SALES COACH</small></span></a>
+    <div class="workspace-name"><span>企业工作空间</span><b>上海演示环境⌄</b></div>
+    <nav><button class="nav-item active"><span>▦</span>场景话术</button>
+      <button class="nav-item "><span>◇</span>异议演练</button>
+      <button class="nav-item "><span>✓</span>团队素材</button>
+      <button class="nav-item "><span>⌁</span>合规检查</button></nav>
+    <div class="side-card"><b>本地演示模式</b><p>不会调用外部模型，也不会上传真实业务数据。</p><a href="https://www.zhuatech.cn/" target="_blank">访问知华科技官网 ↗</a></div>
+  </aside>
+  <main>
+    <header class="topbar"><div><p>销售赋能训练 / 工作台</p><h1>智能销售话术</h1></div><div class="top-actions"><button class="icon-button">⌕</button><button class="icon-button">?</button><span class="avatar">知</span></div></header>
+    <div class="content">
+      <section class="page-head"><div><h2>销售赋能训练工作台</h2><p>基于客户场景生成可审阅的话术建议与异议处理训练</p></div><button class="primary" id="run-open">＋ 新建分析任务</button></section>
+      <section class="metrics"><article class="metric"><span>训练任务</span><strong>14</strong><small>较昨日 +8%</small></article>
+        <article class="metric"><span>本周演练</span><strong>62</strong><small>本周保持稳定</small></article>
+        <article class="metric"><span>合规提醒</span><strong>3</strong><small>需要优先处理</small></article>
+        <article class="metric"><span>素材采纳率</span><strong>71%</strong><small>数据更新于 10:30</small></article></section>
+      <section class="workspace-grid">
+        <article class="panel queue-panel">
+          <header><div><h3>当前处理队列</h3><p>按风险和更新时间排序</p></div><div class="tools"><label>⌕<input id="search" placeholder="搜索记录"></label><button id="refresh">刷新</button></div></header>
+          <div class="table-wrap"><table><thead><tr><th>训练场景</th><th>客户角色</th><th>核心异议</th><th>难度</th><th>状态</th></tr></thead><tbody><tr data-keywords="ERP 首次沟通 制造企业 CIO 实施周期 中 待演练"><td><b>ERP 首次沟通</b></td><td>制造企业 CIO</td><td>实施周期</td><td><span class="risk r0">中</span></td><td>待演练</td></tr>
+            <tr data-keywords="续费价值沟通 零售运营总监 预算压缩 高 教练复核"><td><b>续费价值沟通</b></td><td>零售运营总监</td><td>预算压缩</td><td><span class="risk r1">高</span></td><td>教练复核</td></tr>
+            <tr data-keywords="WMS 方案演示 仓储负责人 系统稳定性 中 已完成"><td><b>WMS 方案演示</b></td><td>仓储负责人</td><td>系统稳定性</td><td><span class="risk r2">中</span></td><td>已完成</td></tr></tbody></table></div>
+          <footer><span>显示 3 条重点记录</span><div><button>‹</button><b>1</b><button>›</button></div></footer>
+        </article>
+        <article class="panel insight-panel">
+          <header><div><span class="eyebrow">AI 辅助分析</span><h3>ERP 首次沟通</h3><p>制造企业 CIO 初次访谈</p></div><span class="status">待人工确认</span></header>
+          <section class="summary"><b>分析摘要</b><p>客户关注实施周期，建议先确认组织范围与上线目标，再说明分阶段交付方法；避免承诺未经评估的固定工期。</p></section>
+          <ul class="findings"><li><span>1</span><div><b>识别结果</b><p>主要异议为实施风险而非价格</p></div><em>94%</em></li>
+              <li><span>2</span><div><b>风险关注</b><p>客户希望三个月内看到业务效果</p></div><em>82%</em></li>
+              <li><span>3</span><div><b>处理边界</b><p>缺少现有系统接口数量信息</p></div><em>76%</em></li></ul>
+          <section class="actions"><b>建议动作</b><label><input type="checkbox"><span>先提问确认范围和关键接口</span></label>
+              <label><input type="checkbox"><span>用里程碑解释分阶段价值</span></label>
+              <label><input type="checkbox"><span>技术评估后再给出正式排期</span></label></section>
+          <footer><button class="secondary">查看依据</button><button class="primary" id="approve">确认并进入流程</button></footer>
+        </article>
+      </section>
+      <div class="audit-line"><span>最后同步：2026-08-22 10:30</span><span>所有模型输出均需人工复核 · 上海如静知华信息科技有限公司</span></div>
+    </div>
+  </main>
+  <dialog id="run-dialog"><form method="dialog"><button class="close" value="cancel">×</button><span class="dialog-icon">练</span><h3>新建智能销售话术任务</h3><p>填写演示对象与业务上下文，系统将执行本地确定性规则。</p><label>分析对象<input id="subject" value="ERP 首次沟通"></label><label>业务场景<input id="scenario" value="制造企业 CIO 初次访谈"></label><label>补充上下文<textarea id="context">请结合当前业务规则给出可解释结果和后续动作。</textarea></label><label class="check"><input id="human-review" type="checkbox" checked> 结果进入人工复核队列</label><button class="primary wide" id="run-submit" value="default">运行演示分析</button><small id="run-status"></small></form></dialog>
+  <div class="toast" id="toast">已确认，任务进入后续流程</div><script src="app.js"></script>
+</body></html>
