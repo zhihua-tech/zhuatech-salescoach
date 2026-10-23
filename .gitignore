@@ -9,3 +9,4 @@ node_modules/
 !.env.example
 *.log
 output/playwright/
+!.env.practical.example
